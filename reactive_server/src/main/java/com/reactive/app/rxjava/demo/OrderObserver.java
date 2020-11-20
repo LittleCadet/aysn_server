@@ -1,4 +1,4 @@
-package com.reactive.app.demo;
+package com.reactive.app.rxjava.demo;
 
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
@@ -10,13 +10,18 @@ import lombok.SneakyThrows;
  * @date 2020/8/26
  */
 public class OrderObserver implements Observer<OrderInfo> {
+
+    /**
+     * 订阅一个可随机中断 同步或异步的连接
+     * @param d
+     */
     @Override
     public void onSubscribe(@NonNull Disposable d) {
         System.out.println("触发了onSubscribe");
     }
 
     /**
-     * 主要自定
+     * 主要定义新的Iterm
      * @param info
      */
     @SneakyThrows

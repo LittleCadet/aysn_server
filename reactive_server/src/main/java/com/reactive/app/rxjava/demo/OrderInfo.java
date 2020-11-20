@@ -1,4 +1,4 @@
-package com.reactive.app.demo;
+package com.reactive.app.rxjava.demo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

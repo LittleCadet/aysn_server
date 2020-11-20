@@ -32,8 +32,6 @@ public class FunctionModelConfig {
      *
      * 注意 : 此行为： 需要至少spring 5.2
      *
-     * @param handler
-     * @return
      */
     @Bean
     public RouterFunction<ServerResponse> routerFunction(final FunctionPersonHandler handler){
@@ -44,7 +42,7 @@ public class FunctionModelConfig {
     }
 
 
-    public class FunctionPersonHandler {
+    public static class FunctionPersonHandler {
 
         private final ExecutorService EXECUTOR = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
 

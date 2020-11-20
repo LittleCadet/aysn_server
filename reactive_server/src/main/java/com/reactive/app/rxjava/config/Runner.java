@@ -1,17 +1,12 @@
-package com.reactive.app.config;
+package com.reactive.app.rxjava.config;
 
-import com.reactive.app.demo.OrderInfo;
-import com.reactive.app.demo.OrderObserver;
+import com.reactive.app.rxjava.demo.OrderInfo;
+import com.reactive.app.rxjava.demo.OrderObserver;
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
 
 
 /**
